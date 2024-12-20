@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Website Wisata - Destinasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Explore Indonesia</h1>
+        <p>Temukan destinasi wisata terbaik di Indonesia!</p>
+        <nav>
+            <a href="beranda.html">Beranda</a>
+            <a href="destinasi">Destinasi</a>
+            <a href="kontak.html">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- Bagian Destinasi -->
+    <section id="destinasi">
+        <h2>Destinasi Populer</h2>
+        <div class="destinasi-container">
+            <div class="destinasi-item" onclick="showInfo('Bali')">
+                <img src="Bali.jpg" alt="Bali">
+                <h3>Bali</h3>
+            </div>
+            <div class="destinasi-item" onclick="showInfo('Raja Ampat')">
+                <img src="Raja ampat.jpg" alt="Raja Ampat">
+                <h3>Raja Ampat</h3>
+            </div>
+            <div class="destinasi-item" onclick="showInfo('Yogyakarta')">
+                <img src="Jogja.jpg" alt="Yogyakarta">
+                <h3>Yogyakarta</h3>
+            </div>
+        
+    <!-- Pop-up Informasi -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
